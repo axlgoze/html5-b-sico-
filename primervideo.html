@@ -1,18 +1,72 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!--De esta manera al comienzo de todo documento se especifica si tipo-->
+<html lang="es"> <!--el atributo lang especifica en que idioma esta nuestrs página-->
 <head>
 
-	<meta charset="iso-8559-1"/>
+	<meta charset="iso-8559-1"/> <!--etiqueras meta-->
 	<meta charset="UTF-8"/> <!--Esta etiqueta sirve para reconocer los tildes-->
-	<meta name="description" content="Página de aprendizaje htlm5"/>
-	<meta name="keywords" content="html5, css3, javascript, diseño web"/>
+	<meta name="description" content="Página de aprendizaje htlm5"/> <!--Las etiquetas meta no necesitan su etiqueta de cierre-->
+	<meta name="keywords" content="html5, css3, javascript, diseño web"/> <!--permite que los buscadores encuentren facilmente tu pagina-->
+	<!-- Esta etiqueta debe estar anidada en head-->
+	<title> 
+		Programación en lenguaje de etiquetas
+	</title> <!--no importa la posicion de esta etiqueta, no afecta si se pone arriba de las meta-->
+	<!--Los espacios en blanco no se ven en la pagina web para eso se usa código especpifico-->
+	<link rel="stylesheet" href="Mihojadeestilos.css"/> <!--link sirve para enlazar documentos a nuestra página-->
 
-	<title>
-		Página de programación en lenguaje de etiquetas
-	</title>
+<body> <!--El cuerpo siempre va dentro de head-->
+<header> 
+	<h1>Título de nuestra web</h1> <!--h1 sirve para poner cambiar el tamaño, va del atributo 1 al 6-->
+</header>
+	<nav> <!--Agrega una barra de navegación-->
+		<ul> <!--Agrega una lista DESordenada-->
+			<li>opcion uno</li> <!--agrega un elemento con li-->
+			<li>opcion dos</li>
+			<li>opcion tres</li>
+		</ul>
 
-<body>
-	Esta es nuestra primera página web para aprender html
+	</nav>
+	<aside> <!--Agrega una barra lateral-->
+		<blockquote>Primer elemento</blockquote> <!--Etiqueta que se usa para citas largas-->
+		<blockquote>Segundo elemento</blockquote>
+		<blockquote>Tercer elemento</blockquote>
+	</aside>
+	<section> <!--Contenido principal-->
+		<p>Parrafo de ejemplo</p> <!--p de parrafo, para agregar texto-->
+		
+		<!--Uso de etiqueta article para agrupar contenido-->
+		<!--Agrupamiento(1)-->
+		<article>
+			<p>Agrupamiento uno</p>
+			<p>Agrupamiento uno: noticia1</p>
+			<p>Agrupamiento uno: fin de noticia1</p>
+		</article>
+
+		<!--Agrupamiento(2)-->
+		<article>
+			<p>Agrupamiento dos</p>
+			<p>Agrupamiento dos: noticia2</p>
+			<p>Agrupamiento dos: fin de noticia2</p>
+		</article>
+		
+		<!--Agrupamiento(3) con uso de cabecera y pie-->
+		<article>
+			<header>
+				<h1>Título de noticia3</h1>
+			</header>
+
+			<p>Agrupamiento tres</p>
+			<p>Agrupamiento tres: noticia3</p>
+			<p>Agrupamiento tres: fin de noticia3</p>
+			
+			<footer>
+				<p>Caja de comentarios</p>
+			</footer>
+		</article>
+
+	</section>
+	<footer> <!--Información adicional que va hasta abajo de la página web-->
+		Derechos reservados
+	</footer>
 </body>
 </head>	
 
@@ -21,4 +75,4 @@
 
 
 
-</html>
+</html> <!--Cada etiqueta que se abre se tiene que cerrar-->
