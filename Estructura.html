@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="Mihojadeestilos.css"/> <!--link sirve para enlazar documentos a nuestra página-->
 
 <body> <!--El cuerpo siempre va dentro de head-->
-<header> 
+<header> <!--parte visible del documento-->
 	<h1>Título de nuestra web</h1> <!--h1 sirve para poner cambiar el tamaño, va del atributo 1 al 6-->
 </header>
 	<nav> <!--Agrega una barra de navegación-->
@@ -51,16 +51,42 @@
 		<!--Agrupamiento(3) con uso de cabecera y pie-->
 		<article>
 			<header>
-				<h1>Título de noticia3</h1>
-			</header>
+			   
+				<hgroup> <!--Nos sirve para agrupar títulos y subtítulos-->
+					<h1>Título de noticia3</h1>
+					<h2>Subtítulo de noticia 3</h2>
+			    </hgroup>
 
+			</header>
+			<!--para insertar una imagen se usa figure-->
+			<figure>
+				<img src="imagenes/IMG_0742.JPG"/> <!--Ruta relativa-->
+				<!--Para agregar un pie de foto se usa figcaption-->
+				<figcaption><mark> de trabajo olvidada</mark></figcaption> <!--MARK resalta el texto-->
+			</figure>
 			<p>Agrupamiento tres</p>
 			<p>Agrupamiento tres: noticia3</p>
 			<p>Agrupamiento tres: fin de noticia3</p>
 			
 			<footer>
 				<p>Caja de comentarios</p>
-			</footer>
+			</footer> <!--Footer es hermana de header en este nivel, su padre de ambas es article-->
+		</article>
+
+		<article>
+
+			<header>
+				<hgroup>
+					<h1>Título extra</h1>
+					<h2>Subtítulo de notica extra</h2>
+				</hgroup>
+			</header>
+
+			<p>Texto de noticia extra</p>
+			<p>Más texto de noticia extra</p>
+			
+			<footer> informacion adicional de noticia extra </footer>
+
 		</article>
 
 	</section>
