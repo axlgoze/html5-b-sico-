@@ -1,6 +1,11 @@
-
 /* CSS document*/
-body {
-    background-color: chocolate ;
+/* 
+header {
+    background-color: aqua ; propiedad : valor
     }
+*/
 
+/*Creacion de selector de tipo id*/
+#cabeceraPrincipal{ /* #nombreIdentificador */
+    background-color: darkorange; 
+}
