@@ -12,27 +12,28 @@
 	</title> <!--no importa la posicion de esta etiqueta, no afecta si se pone arriba de las meta-->
 	<!--Los espacios en blanco no se ven en la pagina web para eso se usa código especpifico-->
 	<link rel="stylesheet" href="Mihojadeestilos.css"/> <!--link sirve para enlazar documentos a nuestra página-->
-
+</head>
 <body> <!--El cuerpo siempre va dentro de head-->
 
 <header id="cabeceraPrincipal"> <!--parte visible del documento-->
 	<h1>Título de nuestra web</h1> <!--h1 sirve para poner cambiar el tamaño, va del atributo 1 al 6-->
 </header>
 
-	<nav> <!--Agrega una barra de navegación-->
+	<nav id="barraPrincipal"> <!--Agrega una barra de navegación-->
 		<ul> <!--Agrega una lista DESordenada-->
 			<li>opcion uno</li> <!--agrega un elemento con li-->
 			<li>opcion dos</li>
 			<li>opcion tres</li>
 		</ul>
-
 	</nav>
-	<aside> <!--Agrega una barra lateral-->
+
+	<aside id="barraLateral"> <!--Agrega una barra lateral-->
 		<blockquote>Primer elemento</blockquote> <!--Etiqueta que se usa para citas largas-->
 		<blockquote>Segundo elemento</blockquote>
 		<blockquote>Tercer elemento</blockquote>
 	</aside>
-	<section> <!--Contenido principal-->
+
+	<section id="contenidoPrincipal"> <!--Contenido principal-->
 		<p>Parrafo de ejemplo</p> <!--p de parrafo, para agregar texto-->
 		
 		<!--Uso de etiqueta article para agrupar contenido-->
@@ -53,7 +54,7 @@
 		<!--Agrupamiento(3) con uso de cabecera y pie-->
 		<article>
 			<header>
-			   
+
 				<hgroup> <!--Nos sirve para agrupar títulos y subtítulos-->
 					<h1>Título de noticia3</h1>
 					<h2>Subtítulo de noticia 3</h2>
@@ -62,7 +63,7 @@
 			</header>
 			<!--para insertar una imagen se usa figure-->
 			<figure>
-				<img src="imagenes/IMG_0742.JPG"/> <!--Ruta relativa-->
+				<img src="imagenes/IMG_0742.JPG" width="1080" height="1080"/> <!--Ruta relativa-->
 				<!--Para agregar un pie de foto se usa figcaption-->
 				<figcaption><mark> mesa de trabajo olvidada</mark></figcaption> <!--MARK resalta el texto-->
 			</figure>
@@ -80,7 +81,7 @@
 			<header>
 				<hgroup>
 					<h1>Reseña de pélicula:</h1> <cite><h2>El padrino</h2></cite> <!--cite hace referencias a trabajos de terceros-->
-					<time datetime=" 2021/02/13 ">articulo publicado el 13/02/2021 </time> <!--time indica la hora y/o fecha con su formato correspondiente con ayuda de su atributo-->
+					<time datetime=" 2021/02/13 pubdate">articulo publicado el 13/02/2021 </time> <!--time indica la hora y/o fecha con su formato correspondiente con ayuda de su atributo-->
 					<h3>Subtítulo de notica extra</h3>
 				</hgroup>
 			</header>
@@ -91,18 +92,16 @@
 			<footer> informacion adicional de noticia extra </footer>
 
 		</article>
+		<article>
+			<p><strong>Este texto es importante</strong></p> <!--strong tiene la funcion semantica de indicar que un texto es importante-->
+		</article>
 
 	</section>
-	<footer> <!--Información adicional que va hasta abajo de la página web-->
+
+	<footer id="piePrincipal"> <!--Información adicional que va hasta abajo de la página web-->
 		<small> Derechos reservados </small> <!--small sirve para dar enfasis a textos legales-->
-		<address>Telefono de contacto: 1011101011</address>
+		<address>Telefono de contacto: 1011101011</address> <!--address para información de contacto-->
 	</footer>
+
 </body>
-</head>	
-
-
-
-
-
-
 </html> <!--Cada etiqueta que se abre se tiene que cerrar-->

@@ -1,11 +1,38 @@
 /* CSS document*/
-/* 
-header {
-    background-color: aqua ; propiedad : valor
-    }
-*/
 
 /*Creacion de selector de tipo id*/
 #cabeceraPrincipal{ /* #nombreIdentificador */
-    background-color: darkorange; 
+    background-color: rgb(0, 255, 21); 
 }
+
+body{ /*selector de etiqueta, indicamos que cambiara solo esta etiqueta*/
+    background-color: gold;
+}
+
+/*Ejemplo de selector de etiqueta y de id*/
+nav{ /*etiqueta*/
+    background-color: thistle;
+}
+
+#barraPrincipal{ /*id*/
+    background-color: teal;
+}
+
+#barraLateral{
+    background-color: tomato;
+    float: left;
+    height: 1872.74px;
+}
+#contenidoPrincipal{
+    background-color: purple;
+    margin-left: 200.65px;
+}
+#piePrincipal{
+    background-color: yellow;
+}
+
+li{
+    background-color: yellowgreen;
+    display: inline;
+}
+
