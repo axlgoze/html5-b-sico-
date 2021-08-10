@@ -20,15 +20,16 @@ nav{ /*etiqueta*/
 
 #barraLateral{
     background-color: tomato;
-    float: left;
-    height: 1872.74px;
+    float: left;  /*float rompe el flujo por defecto de los elementos*/
+    height: 1872.74px; /*altura*/
 }
 #contenidoPrincipal{
-    background-color: purple;
+    background-color:rgb(183, 0, 255);
     margin-left: 200.65px;
+    padding-left: 15px;
 }
 #piePrincipal{
-    background-color: yellow;
+    background-color: rgb(15, 92, 235);
 }
 
 li{
