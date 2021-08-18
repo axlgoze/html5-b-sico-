@@ -9,23 +9,26 @@
 	
     <title>Selectores en html</title>
 
+    <style>
+        /* selector de tipo P */
+        /* p[name="miselementos"] {
+
+            color:crimson;
+
+        } */
+        /* selector de tipo P con simbolos extras*/
+        p[nombre*="ele"]{ /*Este simbolo permite aplicar estilos a valores que empiezen con esta(s) letra(s)*/
+
+            color: fuchsia;        }
+    </style>
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Aprendiendo sobre los selectores</h1>
-    </header>
-    
-    <nav>
-        <li>uno</li>
-        <li>dos</li>
-        <li>tres</li>
-    </nav>
-
-    <section></section>
-    <aside></aside>
-    <footer></footer>
+    <p nombre="miselementos" >Hola</p>
+    <p nombre="miselementos" >Adios</p>
+    <p nombre="elemontos">Agosto</p>
 
 </body>
 
