@@ -19,16 +19,41 @@
         /* selector de tipo P con simbolos extras*/
         p[nombre*="ele"]{ /*Este simbolo permite aplicar estilos a valores que empiezen con esta(s) letra(s)*/
 
-            color: fuchsia;        }
+            color: fuchsia;        
+        }
+            
+        /* aplica color a elementos p pero solo al segundo */
+        p:nth-child(3){
+            color: violet;
+        }
+        
+        p:nth-child(odd){ 
+            color: rebeccapurple;
+        }
+
+        p:nth-child(even){
+            color: turquoise;
+        }
     </style>
 
 </head>
 
 <body>
-
+<!-- 
     <p nombre="miselementos" >Hola</p>
     <p nombre="miselementos" >Adios</p>
-    <p nombre="elemontos">Agosto</p>
+    <p nombre="elemontos">Agosto</p> -->
+
+    <p>celebration</p>
+    <p>tonigh</p>
+    <p>we dont stoped</p>
+
+    <ol>
+        <li> <p>COLORES</p>
+        <p>AMARILLO</p>
+        <P>AZUL</P>  
+        <P>ROJO</P> </li>
+    </ol>
 
 </body>
 
